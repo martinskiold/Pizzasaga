@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Pizza Saga</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+		<script src="assets/js/jquery.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Pizza Saga</h1>
+			<p id="instr_link">Instructions</p>
+		</header>
+		<main>
+			<div id="gameWrapper">
+				<canvas id="gameCanvas" width="640" height="480">
+					Error loading game environment
+				</canvas>
+			</div>
+			<div id="resultWrapper" class="messageWrapper">
+				<p id="txt_gameresult" class="message_header"></p>
+				<p id="txt_feedback" class="message_text"></p>
+				<div>
+					<a>Restart game</a>
+				</div>
+			</div>
+			<div id="instructionWrapper" class="messageWrapper">
+				<p id="game_instructions_header" class="message_header"></p>
+				<p id="game_instructions" class="message_text"></p>
+				<div>
+					<a>Close</a>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<audio id="audio_eating"> 
+			   <source src="assets/audio/eating.mp3" type="audio/mpeg">
+			   <source src="assets/audio/eating.ogg" type="audio/ogg">
+			</audio>
+			<script src="assets/js/main.js"></script>
+		</footer>
+	</body>
+</html>
